@@ -1,0 +1,114 @@
+.detailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    max-width: 100vw;
+    padding: 15px 60px;
+    color: white;
+    box-shadow: 0 0 7px 4px rgba(115, 241, 161, 0.76);
+    column-gap: 50px;
+    background-color: rgba(0, 255, 94, 0.76);
+    margin: 0;
+    z-index: 1;
+  }
+  
+  .details {
+    position: absolute;
+  }
+  .avatar {
+    max-width: 100%;
+  }
+  h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .surname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #406d9a00;
+    max-width: 50vw;
+    padding-top: 20px;
+  }
+  .surname input {
+    border: none;
+    border-radius: 10px;
+    background-color: #e9f1f8b4;
+    padding: 0 10px;
+    margin: 5px;
+    max-width: 70vw;
+    background-color: white;
+  }
+  .surname input:disabled {
+    background-color: #3e4347de;
+    color: rgb(255, 255, 255);
+  }
+  .edit {
+    border: none;
+    background-color: rgba(0, 255, 94, 0.76);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .saveRedact {
+    border: none;
+    background-color: rgba(255, 208, 0, 0.76);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .businessCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    position: relative;
+  }
+  .businessCard span {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 18px;
+    top: 15px;
+    right: 20px;
+  }
+  .businessCard span:hover {
+    text-decoration: none;
+  }
+  .approved {
+    position: absolute;
+    top: 3%;
+    right: 40%;
+    
+  }
+  .approved input {
+    transform: scale(2);
+  }
+  .approved label {
+    padding-right: 10px;
+  }
+  .delete {
+    border: none;
+    background-color: rgba(255, 30, 0, 0.76);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+  }
+  .butts {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .butts button {
+    margin: 15px;
+  }

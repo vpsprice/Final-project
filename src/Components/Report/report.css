@@ -1,0 +1,126 @@
+.formPublic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(206, 245, 220, 0.76);
+  padding: 30px;
+  width: 450px;
+  border-radius: 10px;
+  transform: scale(0.9);
+}
+.report {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0 100px 0;
+  gap: 100px;
+}
+.report img {
+  max-width: 100%;
+}
+.formPublic input {
+  margin: 10px;
+  width: 280px;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.formPublic select {
+  border: none;
+  margin: 10px;
+  width: 280px;
+  height: 40px;
+}
+
+.formPublic label {
+  text-align: center;
+}
+.formPublic h2 {
+  color: rgba(0, 255, 94, 0.76);
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.formPublic button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: rgba(0, 255, 94, 0.76);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modalForm {
+  background-color: rgba(206, 245, 220, 0.76);
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 40px rgba(0, 255, 94, 0.76);
+  border-radius: 15px;
+}
+.modalSubContainer {
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.modalSubContainer div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.modalForm span {
+  color: red;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+.modalForm input,
+.modalForm select {
+  border: none;
+  margin: 10px;
+  min-width: 30vw;
+}
+.modalForm button {
+  border: none;
+  background-color: rgba(0, 255, 94, 0.76);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: white;
+  align-self: center;
+}
+input:invalid,
+select:invalid {
+  background-color: ivory;
+  border: none;
+  outline: 2px solid rgba(0, 255, 94, 0.76);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .formPublic {
+    width: 350px;
+  }
+  .formPublic input {
+    width: 250px;
+  }
+  .formPublic select {
+    width: 250px;
+  }
+}
